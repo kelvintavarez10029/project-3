@@ -380,3 +380,74 @@ footer ul a {
 footer ul li span a {
   color: rgb(218, 82, 82);
 }
+
+ /* ✅ Responsive Enhancements */
+@media (max-width: 768px) {
+  .content {
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .forms {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .order-summary,
+  .payment,
+  .reviews,
+  .review-details,
+  .form-control,
+  .form-input-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-table {
+    gap: 10px;
+  }
+
+  .reviews {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .review-author-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    gap: 20px;
+  }
+
+  .forms {
+    gap: 10px;
+  }
+
+  .order-table {
+    gap: 5px;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  .form-input-group input {
+    font-size: 14px;
+  }
+}
